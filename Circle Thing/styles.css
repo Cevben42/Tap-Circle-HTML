@@ -1,0 +1,44 @@
+:root {
+    --bg-color:white;
+    --text-color:black;
+    --circle-color:rgb(255, 211, 15);
+}
+
+body {
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    font-family:sans-serif;
+    text-align:center;
+    margin:2rem;
+    transition:backgroun-color 0.3s, color 0.5s;
+    font-weight: bold;
+}
+
+#sliderContainer {
+    margin:1rem 0;
+}
+
+#circleContainer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:300px;
+}
+
+#circle {
+    width:150px;
+    height:150px;
+    background-color:var(--circle-color);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:width 0.2s, height 0.2s;
+}
+
+.dark {
+    --bg-color: #121212;
+    --text-color:rgb(239, 243, 0);
+    --circle-color: rgb(149, 218, 203);
+}
